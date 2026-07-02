@@ -1,42 +1,38 @@
-# What is JSYP Project
+# JoRide at JSYP 2025
 
-## Overview
+Pitch deck and competition documentation for **JoRide** — a self-service, IoT-integrated car-rental platform — presented at the **Jordan Students and Young Professionals Congress (JSYP 2025)**.
 
-**JSYP (Jordan Students and Young Professionals Congress)** is one of Jordan's leading innovation and technology events, bringing together students, researchers, entrepreneurs, and young professionals to showcase creative solutions that address real-world challenges.
+> JSYP is one of Jordan's premier innovation events, connecting students, researchers, and entrepreneurs to showcase technology solutions to real-world problems.
 
-The competition provides a platform for participants to:
-- Present innovative projects to expert judges and industry leaders
-- Gain structured feedback to improve their solutions
-- Develop technical and entrepreneurial skills
-- Connect with potential partners, investors, and mentors
+## What Is JoRide?
 
----
+JoRide is an end-to-end smart transportation platform built for the Jordanian market. It connects users with a vehicle fleet through a Flutter mobile app, an ASP.NET Core REST backend, Firestore data persistence, and in-vehicle GPS/IoT hardware (Teltonika FMC130 with CAN bus relay) for real-time tracking and remote keyless access.
 
-## JoRide at JSYP
+| Layer | Technology |
+|---|---|
+| Mobile App | Flutter (Dart) — AR/EN, dark/light |
+| Backend API | ASP.NET Core 8 + JWT |
+| Database | Firebase Firestore |
+| GPS / IoT | Teltonika FMC130 + CAN bus relay |
+| Real-time | SignalR push notifications |
 
-As part of JSYP, the **JoRide** project is participating as an innovative smart transportation solution. JoRide aims to improve urban mobility in Jordan by connecting users with reliable and efficient ride-sharing and transportation services through a user-friendly digital platform.
-
-### What JoRide Brings to JSYP
+## JSYP Pitch Summary
 
 | Aspect | Details |
 |---|---|
-| Problem | Limited, fragmented transportation options in local communities |
-| Solution | Digital platform connecting riders with vehicles in real time |
-| Impact | Improved accessibility, convenience, and sustainability of transport |
-| Audience | Students, daily commuters, and local community members |
+| Problem | Fragmented, cash-only, ride-hailing with no self-service option |
+| Solution | Self-service app: browse → book → digital key → drive → return |
+| Differentiator | In-vehicle IoT hardware for real keyless access (not just ride-hailing) |
+| Business Model | Per-minute / hourly / daily pricing + corporate fleet leases |
+| Traction | University incubation, pitched at Fintech Forum, JSYP, NTP competitions |
 
-### Goals Through JSYP Participation
+## Repositories
 
-- Demonstrate JoRide's potential impact on transportation accessibility in Jordan
-- Receive expert feedback to refine the platform's features and business model
-- Build partnerships with stakeholders in Jordan's tech and transportation sectors
-- Showcase the technical depth of the Flutter + ASP.NET Core + Firestore stack
+| Repo | Description |
+|---|---|
+| [joride-backend](https://github.com/omaralrayyan7/joride-backend) | ASP.NET Core 8 REST API |
+| [joride-frontend](https://github.com/omaralrayyan7/joride-frontend) | Flutter mobile + web app |
 
----
+## License
 
-## Future Plans
-
-- Full public launch of the JoRide platform across Jordanian cities
-- Expansion of vehicle categories and pricing tiers
-- Integration with public transit data for multi-modal trip planning
-- Partnerships with universities and corporate campuses for fleet deployment
+[MIT](LICENSE)
